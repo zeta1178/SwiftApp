@@ -3,7 +3,7 @@
 //  SwiftApp
 //
 //  Created by Michael Cruz on 8/22/16.
-//  Copyright © 2016 Michael Cruz. All rights reserved.
+//  Copyright © 2016 Michael Cruz. All rights reserved..
 //
 
 import UIKit
