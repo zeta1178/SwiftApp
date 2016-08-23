@@ -9,10 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var theLabel: UILabel!
 
+    @IBOutlet weak var theWarning: UILabel!
+    
+    var tapCount = 0
+    
+    @IBAction func buttonTapped(_ sender: AnyObject) {
+        
+        tapCount = tapCount + 1
+        if tapCount == 2 {
+            theWarning.text = "Enough Already!"
+        } else {
+            theWarning.text = ""
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red: 137/255.0, green: 207/255.0, blue: 240/255.0, alpha: 1)
+         theLabel.text = "Hello There"
     }
 
     override func didReceiveMemoryWarning() {
