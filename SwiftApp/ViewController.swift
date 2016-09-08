@@ -14,18 +14,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theWarning: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
+   
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
-        
-        tapCount = tapCount + 1
-        if tapCount == 2 {
-            theWarning.text = "Enough Already!"
-            print(tapCount)
-        } else {
-            theWarning.text = ""
-            print(tapCount)
-        }
+        print(text1)
+        print(text1.text)
+        print(text2.text)
     }
     
     override func viewDidLoad() {

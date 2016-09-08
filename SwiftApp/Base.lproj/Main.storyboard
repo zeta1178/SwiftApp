@@ -71,6 +71,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="bZB-JH-lxh" id="Idv-ef-gEM"/>
+                        <outlet property="text2" destination="g7A-ag-Nex" id="vyi-TT-e9q"/>
                         <outlet property="theLabel" destination="qH2-Ha-gXd" id="wD4-51-1N9"/>
                         <outlet property="theWarning" destination="lPy-4a-aiS" id="yS7-2w-Pkz"/>
                     </connections>
