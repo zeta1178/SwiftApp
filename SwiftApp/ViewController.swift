@@ -21,8 +21,10 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         if tapCount == 2 {
             theWarning.text = "Enough Already!"
+            print(tapCount)
         } else {
             theWarning.text = ""
+            print(tapCount)
         }
     }
     
