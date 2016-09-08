@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -29,20 +29,45 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1L-Zs-V1Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-4a-aiS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-4a-aiS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Qm3-No-plY"/>
+                                    <constraint firstAttribute="width" constant="200" id="jBV-8z-WbB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZB-JH-lxh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1nK-BG-osQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7A-ag-Nex">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5FB-5G-1o6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qH2-Ha-gXd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mo-hm-C4Q"/>
                             <constraint firstItem="qH2-Ha-gXd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="9XX-i8-LqM"/>
+                            <constraint firstItem="bZB-JH-lxh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C81-Ox-7Sc"/>
                             <constraint firstItem="U9c-74-5Dq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KDn-gP-ZWr"/>
                             <constraint firstItem="U9c-74-5Dq" firstAttribute="top" secondItem="qH2-Ha-gXd" secondAttribute="bottom" constant="20" id="PTI-dI-zRG"/>
+                            <constraint firstItem="bZB-JH-lxh" firstAttribute="top" secondItem="U9c-74-5Dq" secondAttribute="bottom" constant="10" id="RIE-9F-aYY"/>
+                            <constraint firstItem="g7A-ag-Nex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XcM-pu-3N8"/>
                             <constraint firstItem="lPy-4a-aiS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7b-kx-t03"/>
-                            <constraint firstItem="lPy-4a-aiS" firstAttribute="top" secondItem="U9c-74-5Dq" secondAttribute="bottom" constant="15" id="hpq-rW-OJT"/>
+                            <constraint firstItem="bZB-JH-lxh" firstAttribute="top" secondItem="U9c-74-5Dq" secondAttribute="bottom" constant="10" id="ejl-2S-xTa"/>
+                            <constraint firstItem="lPy-4a-aiS" firstAttribute="top" secondItem="U9c-74-5Dq" secondAttribute="bottom" constant="150" id="hpq-rW-OJT"/>
+                            <constraint firstItem="g7A-ag-Nex" firstAttribute="top" secondItem="bZB-JH-lxh" secondAttribute="bottom" constant="30" id="mMH-wq-4gY"/>
                         </constraints>
                     </view>
                     <connections>
