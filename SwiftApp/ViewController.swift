@@ -23,8 +23,14 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
         
-        theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        let addition = false
         
+        if addition {
+            theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        
+        } else {
+            theLabel.text = "\(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     
     override func viewDidLoad() {
